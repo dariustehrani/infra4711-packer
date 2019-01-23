@@ -15,9 +15,6 @@ steps:
     connectedServiceAzure: 'packer-infra4711'
     templatePath: ubuntu1804.json
     #force: true|false Force a build to continue if artifacts exist, deletes existing artifacts
-    variables: |+
-        resource_group=$(resource-group)
-        storage_account=$(storage-account)
     #variables-file: JSON file containing user variables.
     #options: Additional options, see Packer Commands (CLI)  for more information.
     command: validate
@@ -29,9 +26,6 @@ steps:
     connectedServiceAzure: 'packer-infra4711'
     templatePath: ubuntu1804.json
     #force: true|false Force a build to continue if artifacts exist, deletes existing artifacts
-    variables: |+
-        resource_group=$(resource-group)
-        storage_account=$(storage-account)
     #variables-file: JSON file containing user variables.
     #options: Additional options, see Packer Commands (CLI)  for more information.
     command: build
