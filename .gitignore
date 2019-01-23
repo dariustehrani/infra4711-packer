@@ -1,0 +1,10 @@
+.credentials
+.pem
+.ppk
+*.tfstate
+*.tfstate*
+.terraform
+.out
+tfplan
+plantf
+.plan
