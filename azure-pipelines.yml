@@ -10,10 +10,17 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: riezebosch.Packer.PackerTool.PackerTool@0
+  displayName: 'get packer 1.3.2'
+  inputs:
+    version: 1.3.2
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
+- task: riezebosch.Packer.Packer.Packer@1
+  displayName: 'packer-validate'
+  inputs:
+    azureSubscription: 'packer-infra4711'
+
+    templatePath: ubuntu1804.json
+
+    command: validate
