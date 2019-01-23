@@ -24,3 +24,12 @@ steps:
     templatePath: ubuntu1804.json
 
     command: validate
+
+- task: riezebosch.Packer.Packer.Packer@1
+  displayName: 'packer-build'
+  inputs:
+    azureSubscription: 'packer-infra4711'
+
+    templatePath: ubuntu1804.json
+
+    command: build
