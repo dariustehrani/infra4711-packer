@@ -12,7 +12,7 @@ steps:
   displayName: 'packer validate'
   inputs:
     connectedServiceType: azure
-    connectedServiceAzure: 'packer-infra4711'
+    connectedServiceAzure: 'packer4711'
     templatePath: ubuntu1804.json
     #force: true|false Force a build to continue if artifacts exist, deletes existing artifacts
     #variables-file: JSON file containing user variables.
@@ -23,7 +23,7 @@ steps:
   displayName: 'packer build'
   inputs:
     connectedServiceType: azure
-    connectedServiceAzure: 'packer-infra4711'
+    connectedServiceAzure: 'packer4711'
     templatePath: ubuntu1804.json
     #force: true|false Force a build to continue if artifacts exist, deletes existing artifacts
     #variables-file: JSON file containing user variables.
