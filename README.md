@@ -1,6 +1,9 @@
 # infra4711-packer
 base image for azure based on ubuntu 18.04 LTS.
 
+# status
+[![Build status](https://dev.azure.com/datehran/packer4711/_apis/build/status/packer4711-CI)](https://dev.azure.com/datehran/packer4711/_build/latest?definitionId=3)
+
 # prerequisites
 * Azure Account set up
 * for non-exploratory use make sure to used managed service identities. TODO LINK
