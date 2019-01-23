@@ -20,7 +20,7 @@ steps:
         storage_account=$(storage-account)
     #variables-file: JSON file containing user variables.
     #options: Additional options, see Packer Commands (CLI)  for more information.
-  command: validate
+    command: validate
 
 - task: Packer@1
   displayName: 'packer build'
@@ -34,4 +34,4 @@ steps:
         storage_account=$(storage-account)
     #variables-file: JSON file containing user variables.
     #options: Additional options, see Packer Commands (CLI)  for more information.
-  command: build
+    command: build
