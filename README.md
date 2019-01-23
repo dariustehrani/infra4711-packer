@@ -2,7 +2,7 @@
 base image for azure based on ubuntu 18.04 LTS.
 
 # status
-[![Build status](https://dev.azure.com/datehran/packer4711/_apis/build/status/packer4711-CI)](https://dev.azure.com/datehran/packer4711/_build/latest?definitionId=3)
+[![Build Status](https://dev.azure.com/datehran/packer4711/_apis/build/status/dariustehrani.infra4711-packer?branchName=master)](https://dev.azure.com/datehran/packer4711/_build/latest?definitionId=5?branchName=master)
 
 # prerequisites
 * Azure Account set up
