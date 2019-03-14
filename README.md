@@ -57,7 +57,12 @@ Use "verify connection" ...
 ## changing region and/or location
 lookup the corresponding azure source images in your region e.g.
 ```
+#ubuntu
 az vm image list --all -p Canonical -f UbuntuServer -s 18.04-LTS --location westeurope --all --output table
+
+#windows
+az vm image list --publisher MicrosoftWindowsServer --offer WindowsServer --location westeurope --all --output table
+
 ```
 
 # bootstrapping packer on azure
