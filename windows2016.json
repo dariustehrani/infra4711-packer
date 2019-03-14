@@ -18,7 +18,7 @@
         "tenant_id": "{{user `tenant_id`}}",
         "client_id": "{{user `client_id`}}",
         "client_secret": "{{user `client_secret`}}",
-        "managed_image_name": "4711-win2k16-{{isotime \"2006-01-02-150405\"}}",
+        "managed_image_name": "4711-win2k16-{{isotime \"2006-01-02-150405\"user "{{env `$(Build.BuildID)`}}"}}",
         "managed_image_resource_group_name": "{{user `resource_group_name`}}",
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
