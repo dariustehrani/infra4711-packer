@@ -1,7 +1,10 @@
-# Starter pipeline
+# Packer Image Backery
+# azure-pipelines.yml
+
 pool:
   vmImage: 'Ubuntu 16.04'
-   
+trigger:
+- master
 steps:
 - task: riezebosch.Packer.PackerTool.PackerTool@0
   displayName: 'Use Packer 1.3.5'

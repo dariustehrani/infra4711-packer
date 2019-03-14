@@ -5,6 +5,7 @@
       "tenant_id": "{{env `ARM_TENANT_ID`}}",
       "client_id": "{{env `ARM_CLIENT_ID`}}",
       "client_secret": "{{env `ARM_CLIENT_SECRET`}}",
+      "build_id": "{{env `$(BuildID)`}}",
       "azure_location": "westeurope",      
       "resource_group_name": "packer4711",
       "storage_account": "packer4711"
@@ -17,7 +18,7 @@
         "tenant_id": "{{user `tenant_id`}}",
         "client_id": "{{user `client_id`}}",
         "client_secret": "{{user `client_secret`}}",
-        "managed_image_name": "4711-win2k16-{{isotime \"2006-01-02\"}}",
+        "managed_image_name": "4711-win2k16-{{user `build_id`}}",
         "managed_image_resource_group_name": "{{user `resource_group_name`}}",
         "os_type": "Windows",
         "image_publisher": "MicrosoftWindowsServer",
