@@ -18,7 +18,7 @@
         "tenant_id": "{{user `tenant_id`}}",
         "client_id": "{{user `client_id`}}",
         "client_secret": "{{user `client_secret`}}",
-        "managed_image_name": "4711s-ubuntu-{{user `build_id`}}",
+        "managed_image_name": "4711s-ubuntu-{{isotime \"2006-01-02\"}}",
         "managed_image_resource_group_name": "{{user `resource_group_name`}}",
         "os_type": "Linux",
         "image_publisher": "Canonical",
