@@ -24,7 +24,7 @@ steps:
     command: validate
 
 - task: Packer@1
-  displayName: 'packer validate'
+  displayName: 'windows 2016 core packer validate'
   inputs:
     connectedServiceType: azure
     connectedServiceAzure: 'packer4711'
@@ -49,7 +49,7 @@ steps:
 
 
 - task: Packer@1
-  displayName: 'packer build'
+  displayName: 'windows 2016 core packer build'
   inputs:
     connectedServiceType: azure
     connectedServiceAzure: 'packer4711'
